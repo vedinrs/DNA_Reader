@@ -1,11 +1,12 @@
 import unittest
 import main
+import DNAReader
 
-
+# TODO: tests not working with graphical implementation
 class DNAtoAAReaderTest(unittest.TestCase):
 
     def test_empty(self):
-        result = main.dna_to_aa_reader("C:\\Users\\vedin\\Downloads\\DNAReader\\empty.txt", "")
+        result = DNAReader.dna_to_aa_reader("C:\\Users\\vedin\\Downloads\\DNAReader\\empty.txt", "")
         self.assertEqual(result, [])
 
     def test_lysine(self):
